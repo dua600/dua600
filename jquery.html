@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form class="form">
+        <input type="text" id="username" placeholder="enter your username"><br>
+        <input type="password" id="password" placeholder="enter your password"><br>
+        <input type="email" id="email" placeholder="enter your email"><br>
+        <input type="contact" id="contact" placeholder="enter your number"><br>
+         <button type="button" id="btn" onclick="showdata()">submit</button><br>
+         
+    </form>
+    <script>
+    
+        $("#btn").click(function(){
+            var name =$("#username").val();
+            var password =$("#password").val();
+            var email =$("email").val();
+            var contact =$("#contact").val();
+            document.write(name+password+email+contact);
+
+        } )
+    
+    </script>
+</body>
+</html>
